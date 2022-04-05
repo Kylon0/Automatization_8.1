@@ -24,8 +24,7 @@ public class DBTest {
         val users = "DELETE FROM users";
         val runner = new QueryRunner();
         try (val conn = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/db", "kylon", "kylon0"
-        );
+                "jdbc:mysql://localhost:3306/db", "kylon", "kylon0");
         ) {
             runner.update(conn, authCodes);
             runner.update(conn, cardTransactions);

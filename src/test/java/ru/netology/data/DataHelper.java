@@ -17,6 +17,6 @@ public class DataHelper {
     }
 
     public static AuthInfo getAuthInfoInvalid() {
-        return new AuthInfo("Petya", "123qwerty");
+        return new AuthInfo("kolya", "qwerty321");
     }
 }
