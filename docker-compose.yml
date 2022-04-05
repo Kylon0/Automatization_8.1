@@ -9,3 +9,5 @@ services:
       - MYSQL_DATABASE=db
       - MYSQL_USER=kylon
       - MYSQL_PASSWORD=kylon0
+    volumes:
+      - ./initdb:/docker-entrypoint-initdb.d

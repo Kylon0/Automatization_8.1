@@ -16,6 +16,7 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     implementation 'com.github.javafaker:javafaker:1.0.2'
     implementation 'commons-dbutils:commons-dbutils:1.7'
+    implementation 'com.codeborne:selenide:6.3.5'
 }
 
 test {
