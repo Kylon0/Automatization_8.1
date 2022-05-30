@@ -31,7 +31,7 @@ public class AuthorizationTest {
     }
 
     @Test
-    void shouldGetBlockMessage() {
+    void shouldGetInvalidLoginMessage() {
         val  authorizationPage = new  AuthorizationPage();
         val authInfo = DataHelper.getAuthInfoInvalid();
         authorizationPage.login(authInfo);
@@ -39,8 +39,5 @@ public class AuthorizationTest {
         authorizationPage.cleaning();
         authorizationPage.login(authInfo);
         authorizationPage.getInvalidLogin();
-        authorizationPage.cleaning();
-        authorizationPage.login(authInfo);
-        authorizationPage.getBlockedMessage();
     }
 }

@@ -31,10 +31,6 @@ public class AuthorizationPage {
         errorNotification.shouldBe(Condition.visible).shouldHave(Condition.text("Ошибка! "));
     }
 
-    public void getBlockedMessage() {
-        errorNotification.shouldBe(Condition.visible).shouldHave(Condition.text("Система заблокирована"));
-    }
-
     public void cleaning() {
         loginField.doubleClick().sendKeys(Keys.BACK_SPACE);
         passwordField.doubleClick().sendKeys(Keys.BACK_SPACE);
